@@ -15,7 +15,7 @@ export default function Dashboard() {
 
     return (
         <div className="bg-white w-screen h-screen">
-            <div className="header flex flex-row flex-wrap border border-gray-300 justify-between  px-4 pb-3  ">
+            <div className="header flex flex-row w-screen flex-wrap border border-gray-300 justify-between  px-4 pb-3  ">
                 <div className="logos flex gap-8">
                     <div className=" flex gap-0  mt-2">
                         <Image src="/image.png" width={20} height={10} alt="Logo" />
@@ -94,14 +94,128 @@ export default function Dashboard() {
                 </div>
                 <div className={styles.horiZontalLine}></div>
                 <div className={styles.analyticsTable}>
-                    <table>
+                    <table className={styles.table}>
                         <thead className={styles.thead}>
-                            <th className={styles.th}></th>
-                            <th className={styles.th}>JAN</th>
-                            <th className={styles.th}>FEB</th>
-                            <th className={styles.th}>MAR</th>
+                            <tr>
+                                <th className={styles.th}></th>
+                                <th className={styles.th}>JAN</th>
+                                <th className={styles.th}>FEB</th>
+                                <th className={styles.th}>MAR</th>
+                            </tr>
                         </thead>
-                        <tbody></tbody>
+                        <tbody className={styles.tbody}>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>+My Hive</p>
+                                        <div className="avatars flex h-8 ">
+                                            <Image src="/avatar.png" className="relative left-4 " width={20} height={20} alt="Logo" />
+                                            <Image src="/user.png" className="relative left-2" width={20} height={20} alt="Logo" />
+                                            <Image src="/user.png" width={20} height={20} alt="Logo" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className={styles.td} >
+                                    <div className={styles.graph}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>+Bomjour</p>
+                                        <div className="avatars flex h-8 ">
+                                            <Image src="/avatar.png" className="relative left-4 " width={20} height={20} alt="Logo" />
+                                            <Image src="/avatar.png" className="relative left-2" width={20} height={20} alt="Logo" />
+                                            <Image src="/user.png" width={20} height={20} alt="Logo" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph1}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>-Candidate</p>
+                                        <div className="avatars flex h-8 ">
+                                            <Image src="/avatar.png" width={20} height={20} alt="Logo" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph2}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>-Milestone1</p>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph3}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>Authentication</p>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph4}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>Explore</p>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph5}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>+Milestone2</p>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph6}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>+CMS</p>
+                                        <div className="avatars flex h-8 ">
+                                            <Image src="/avatar.png" width={20} height={20} alt="Logo" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph7}></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className={styles.td}>
+                                    <div className={styles.sideHead}>
+                                        <p>+Jobulus</p>
+                                        <div className="avatars flex h-8 ">
+                                            <Image src="/avatar.png" className="relative left-4 " width={20} height={20} alt="Logo" />
+                                            <Image src="/avatar.png" className="relative left-2" width={20} height={20} alt="Logo" />
+                                            <Image src="/user.png" width={20} height={20} alt="Logo" />
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className={styles.td} colSpan={3}>
+                                    <div className={styles.graph8}></div>
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
