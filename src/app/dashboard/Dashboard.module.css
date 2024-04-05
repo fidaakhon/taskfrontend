@@ -7,6 +7,7 @@
     padding:  15px;
     border: collapse;
     border: 1px solid rgb(234, 228, 228);
+    border-radius: 10px;
 
 }
 
@@ -14,10 +15,81 @@
     display: flex;
     border: collapse;
     border: 1px solid rgb(234, 228, 228);
+    border-radius: 10px;
     justify-content: space-between;
     margin-top: 2vh;
     margin-left: 3vw;
     margin-right: 3vw;
+}
+
+.usersIcons {
+    display: flex;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.allusers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.manu {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.manu1 {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.viewSetting {
+    display: flex;
+    height: 45px; 
+    column-gap: 5px;
+    margin-top: 5px;
+    background-color: rgb(229, 215, 215);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.horiZontalLine {
+    width: 90vw;
+    height: 1px;
+    border: collapse;
+    border: 1px dotted rgb(234, 228, 228);
+    margin-top: 2vh;
+}
+.analyticsTable {
+    width: 95%;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    padding: 10px;
+    border: collapse;
+    border: 1px solid rgb(234, 228, 228);
+    border-radius: 10px;
+}
+
+
+.main {
+    border: collapse;
+    border: 1px solid rgb(234, 228, 228);
+    border-radius: 10px;
+    margin-top: 2vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 15px;
+}
+
+.thead {
+    width: 100%;
+}
+.th {
+    width: 20vw;
 }
 
 
@@ -34,6 +106,20 @@
         justify-content: center;
         padding:  15px;
 
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .manu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .allusers {
+        display: flex;
+        justify-content: space-between;
     }
     
 }

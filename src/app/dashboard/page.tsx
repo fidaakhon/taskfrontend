@@ -66,6 +66,45 @@ export default function Dashboard() {
                     <h1 className="font-bold text-2xl">3</h1>
                 </div>
             </div>
+
+            <div className={styles.main}>
+                <div className={styles.navbar}>
+                    <div className={styles.manu}>
+                        <div className={styles.allusers}>
+                            <div className={styles.usersIcons}>
+                                <Image src="/AD.png" className="bg-green-500 rounded-full p-3 z-10" width={40} height={40} alt="Logo" />
+                                <Image src="/user.png" className="relative right-3" width={40} height={40} alt="Logo" />
+                            </div>
+                            <div className={styles.userplus}>
+                                <Image src="/user+.png" width={50} height={50} alt="Logo" />
+                            </div>
+                        </div>
+                        <div className={styles.manu1}>
+                            <ul className="flex gap-4">
+                                <li>Status category<ExpandMoreIcon /> </li>
+                                <li>Workspaces<ExpandMoreIcon /></li>
+                                <li>Qiuk Filter<ExpandMoreIcon /></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className={styles.viewSetting}>
+                        <Image src="/viewsetting.png" width={15} height={10} alt="Logo" />
+                        <p>View settings</p>
+                    </div>
+                </div>
+                <div className={styles.horiZontalLine}></div>
+                <div className={styles.analyticsTable}>
+                    <table>
+                        <thead className={styles.thead}>
+                            <th className={styles.th}></th>
+                            <th className={styles.th}>JAN</th>
+                            <th className={styles.th}>FEB</th>
+                            <th className={styles.th}>MAR</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     )
 }
