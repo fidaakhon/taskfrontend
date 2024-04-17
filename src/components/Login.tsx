@@ -20,7 +20,7 @@ const Login = () => {
 
     return (
         <div className="login-container bg-white w-screen h-screen flex text-center flex-col p-6 items-center">
-            <div className="logo flex gap-0 justify-center mb-20">
+            <div className="logo flex gap-0 justify-center mb-12">
                 <Image src="/image.png" width={30} height={30} alt="Logo" />
                 <h2 className='text-3xl font-bold mt-2'>Streamed</h2>
             </div>
@@ -51,7 +51,7 @@ const Login = () => {
                 <p className='text-xs text-left'>We,ll email you a magic code for password-free sign-in. Or you can <span className='text-green-400 cursor-pointer'>sign in manually instead </span></p>
             </div>
 
-            <div className="footer w-80 absolute bottom-5">
+            <div className="footer w-80 mt-4">
                 <p className='text-sm text-left'>By proceeding, you agree to the Terms of Service
                     and <span className='text-green-400'>Privacy Policy</span></p>
             </div>
